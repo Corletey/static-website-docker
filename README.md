@@ -61,10 +61,14 @@ git commit -m "Add Miniport theme files and Dockerfile"
 git push origin main
 
 # Troubleshooting
-Refusing to Merge Unrelated Histories
+**Refusing to Merge Unrelated Histories**
+
 If you encounter the error "refusing to merge unrelated histories," follow these steps:
+
 git pull origin main --allow-unrelated-histories
-Resolve any conflicts if prompted
+
+**Resolve any conflicts if prompted**
+
 git push origin main
 
 _**Notes:**_
