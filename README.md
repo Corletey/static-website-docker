@@ -47,6 +47,12 @@ docker run -p 8080:80 my-miniport-website
 
 Visit http://localhost:8080 in your web browser to preview the website.
 
+**Running the Docker Container with Pulled Image from Docker Hub**
+
+If you have Docker installed, you can directly pull the image from Docker Hub and run the container:
+docker pull corletey/miniport-website:latest
+docker run -p 8080:80 corletey/miniport-website:latest
+Visit http://localhost:8080 in your web browser to view the website.
 
 **Pushing Changes to GitHub**
 
@@ -56,6 +62,12 @@ git commit -m "Add Miniport theme files and Dockerfile"
 
 git push origin main
 
+**Troubleshooting**
+Refusing to Merge Unrelated Histories
+If you encounter the error "refusing to merge unrelated histories," follow these steps:
+git pull origin main --allow-unrelated-histories
+# Resolve any conflicts if prompted
+git push origin main
 
 _**Notes:**_
 Ensure Docker is installed on your machine before building and running the container.
