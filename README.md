@@ -40,16 +40,20 @@ The project involves the following steps:
 ### Building the Docker Image
 docker build -t my-miniport-website .
 
+
 **Running the Docker Container Locally**
 
 docker run -p 8080:80 my-miniport-website
 
 Visit http://localhost:8080 in your web browser to preview the website.
 
+
 **Pushing Changes to GitHub**
 
 git add .
+
 git commit -m "Add Miniport theme files and Dockerfile"
+
 git push origin main
 
 
@@ -57,6 +61,6 @@ _**Notes:**_
 Ensure Docker is installed on your machine before building and running the container.
 Make sure to replace placeholder names (e.g., my-miniport-website, your-username, etc.) with actual values.
 
-Author
 
+Author,
 Corletey.
